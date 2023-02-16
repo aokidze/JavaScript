@@ -1,0 +1,118 @@
+body,
+html {
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+}
+
+.calc {
+  position: relative;
+  margin: 50px auto;
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  background: #333;
+  color: #ffff;
+  font-family: monospace;
+  padding: 20px;
+  box-shadow: 0 0 30px #64ffda;
+}
+.btn {
+  width: 60px;
+  height: 60px;
+  background: #333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.calc_display {
+  position: relative;
+  height: 125px;
+  padding: 10px;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.calc_display p {
+ position: relative;
+  text-align: right;
+  font-size: 50px;
+  margin: 0;
+}
+.buttons {
+  display: grid;
+  grid-template-areas:
+    "C plus-minus percent division"
+    "seven eight nine multiplay "
+    "four five six minus"
+    "one two three plus"
+    "zero dot equal equal";
+  grid-gap: 7px;
+  justify-items: center;
+}
+
+.equal {
+  grid-area: equal;
+  width: 100%;
+  border-radius: 34px;
+}
+.division{
+  font-size: 1.6rem;
+}
+.btn:hover {
+  filter: brightness(130%);
+}
+.btn:active {
+  filter: brightness(80%);
+}
+.btn.bg-grey {
+  background: #a6a6a6;
+  color: #000;
+}
+.btn.bg-blue {
+  background: #424141;
+  color: #ffff;
+}
+.btn.bg-blue:hover {
+  border: 1px solid #64ffda;
+}
+
+.footer{
+  bottom: 10px;
+  position: relative;
+}
+.Arsen{
+ color: #a8b2d1;;
+ animation: Footer-Arsen 4s ease-in-out forwards infinite;
+ cursor: pointer;
+ user-select: none;
+}
+.github{
+  text-decoration: none;
+}
+.Name-calc{
+  color: #64ffda;
+}
+@keyframes Footer-Arsen {
+  0%{
+  filter: drop-shadow(0 0 20px #64ffda) saturate(100%) hue-rotate(0deg);
+  }
+  50%{
+    filter: drop-shadow(0 0 20px #64ffda) saturate(300%) hue-rotate(360deg);
+  }
+  100%{
+    filter: drop-shadow(0 0 20px #64ffda) saturate(100%) hue-rotate(0deg);
+  }
+}
