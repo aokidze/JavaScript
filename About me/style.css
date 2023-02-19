@@ -1,0 +1,95 @@
+html,body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    font-family: monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.cutaway{
+    background-color: #333;
+    border: solid 1px ;
+    border-radius: 15px;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 0 30px aqua;
+    display: grid;
+}
+.greetings{
+    color:cyan;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    font-size: 2.2rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: color 0.4s ease; 
+   animation: color-change 4s linear infinite; 
+   position: relative;
+   bottom: 10px; 
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e7f246;
+    box-shadow: 0 0 20px #e7f246;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 130px solid #333;
+}
+
+.information{
+    color: aliceblue;
+    position:relative;
+    top:20px;
+    padding-left:5px;
+    font-size: 15px;
+}
+.full-site{ 
+    display: grid;
+    grid-template-areas: 
+    "one two" 
+    "tree four"
+    "five six";
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+}
+.site{
+    position: relative;
+    text-decoration: none;
+    color: rgb(66, 248, 245);
+    top: 0px;
+    padding-left: 5px;  
+    width: 120px;
+    display: grid;
+}
+
+
+@keyframes color-change{
+        0%{
+            background-color: aqua;
+          }
+          50% {
+            background-color: #e672f3;
+          }
+         
+          100% {
+            background-color: aqua;
+    
+}}
